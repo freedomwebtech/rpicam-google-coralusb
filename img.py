@@ -1,10 +1,10 @@
 import cv2    
 import time
 cpt = 0
-maxFrames = 2 # if you want 5 frames only.
+maxFrames = 30 # if you want 5 frames only.
 
 count=0
-cap=cv2.VideoCapture('excavator.mp4')
+cap=cv2.VideoCapture(0)
 while cpt < maxFrames:
     ret, frame = cap.read()
     if not ret:
